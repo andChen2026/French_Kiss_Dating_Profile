@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eHarmony Profile | Prince de Clèves</title>
+    <style>
+        :root {
+            --royal-blue: #1a2a6c;
+            --gold: #c5a059;
+            --soft-white: #f8f9fa;
+            --parchment: #fff9f0;
+            --text-gray: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: var(--text-gray);
+        }
+
+        .profile-card {
+            background: white;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 1px solid var(--gold);
+        }
+
+        .slideshow-container {
+            position: relative;
+            height: 300px;
+            background: #000;
+        }
+
+        .mySlides {
+            display: none;
+            height: 100%;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+        .content { padding: 25px; }
+        h1 { margin: 0; color: var(--royal-blue); font-size: 1.8rem; }
+
+        .badge {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Bio Section Styling */
+        .bio-text {
+            margin: 20px 0;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .quotes-section {
+            background: var(--parchment);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px dashed var(--gold);
+        }
+
+        .quotes-section h2 {
+            font-size: 1rem;
+            color: var(--royal-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 10px 0;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 5px;
+        }
+
+        .quote-item {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .quote-author {
+            display: block;
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.75rem;
+            color: var(--royal-blue);
+        }
+
+        .footer-action {
+            padding: 20px;
+            text-align: center;
+            background: var(--soft-white);
+        }
+
+        button {
+            background: var(--royal-blue);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background: #0d1640; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="slideshow-container">
+        <div class="mySlides"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Louis_Ier_de_Bourbon%2C_1er_prince_de_Cond%C3%A9_%281530-1569%29.jpg/960px-Louis_Ier_de_Bourbon%2C_1er_prince_de_Cond%C3%A9_%281530-1569%29.jpg"></div>
+        <div class="mySlides"><img src="https://foxloft.com/files/2011/09/germanshepherdportrait.jpg"></div>
+        <div class="mySlides"><img src="https://pictures.abebooks.com/inventory/md/md30516699990.jpg"></div>
+        <div class="mySlides"><img src="https://getengravings.com/cdn/shop/products/Heart-Pendant-Necklace-Necklace-With-Picture_1200x1200.jpg?v=1665554969"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="content">
+        <div class="badge">99% Compatibility</div>
+        <h1>Prince Louis de Clèves, 32</h1>
+        
+        <div class="bio-text">
+            <strong>About Me</strong><p>I am a man of few words but deep convictions. I seek a bond rooted in absolute transparency. I value silence over hollow wit, and loyalty over passing fancy. My heart is not easily won, but once given, it is unyielding. I am looking for a partner who understands that the highest form of love is to be truly known, without secrets.</p>
+        </div>
+
+        <div class="quotes-section">
+            <h2>Inspirations & Reflections</h2>
+            <div class="quote-item">"The heart has its reasons which reason knows nothing of."<span class="quote-author">— Blaise Pascal</span></div>
+            <div class="quote-item">"He who suffers before it is necessary, suffers more than is necessary."<span class="quote-author">— Seneca</span></div>
+            <div class="quote-item">"Truth is the only safe ground to stand upon."<span class="quote-author">— E.C. Stanton</span></div>
+        </div>
+    </div>
+
+    <div class="footer-action">
+        <button onclick="alert('Proposal Sent with Sincerity!')">Message Prince Louis</button>
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) { showSlides(slideIndex += n); }
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
